@@ -1,0 +1,45 @@
+<html>
+    <head style="text-aligin:right;">
+
+        <canvas id="myCanvas" width="400" height="400" style="border:5px solid #000000;"></canvas>
+        
+</head>
+<body style="text-align: left;">
+    <form action="/action_page.php">
+    <label for="consle">consle</label>
+    <input type="text" id="consle" name="consle"><br><br>
+    <input type="submit" value="Submit" onclick="run()">
+</form>
+</body>
+<script>
+    var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+c.element.style.right('80')
+
+
+
+
+
+var running = false;
+function run() {
+    if(running === fales){
+    running = true;
+var code = document.getElementById("consle").value;
+draw.background("#cccccc")
+    } else{
+running = false
+
+
+    };
+
+
+};
+
+
+while(running === true) {
+var f=new Function (code);
+return(f());
+
+};
+</script>
+</html>
